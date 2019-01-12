@@ -1,0 +1,28 @@
+body {
+	background: #efefef;
+	font-family: arial;
+}
+h1{
+	font-size: 18px
+}
+h1:hover{
+	font-size: 25px
+}
+
+h2 {
+	font-size: 16px;
+}
+li {
+	font-size: 18px;
+}
+li:hover {
+	font-size: 22px;
+}
+.kplist {
+	height: 80px;
+	overflow: hidden;
+}
+.kplist:hover {
+	height: 80px;
+	overflow: scroll;
+}
