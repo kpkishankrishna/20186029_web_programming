@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+function validateform() {
+	var name = document.forums["myForums"]["words"].value;
+	var comment = document.forums["myForums"]["Comment"].value;
+	var password = document.forums["myForums"]["password"].value;
+
+	if (name = "" || comment = "" || password = "") {
+		alert("please fill the form");
+		return false;
+	}
+	else if(password != "password") {
+		alert ("please enter the correct password");
+	}
+// 	else {
+// 		text = words.value;
+// 		text1 = words.value;
+// 		document.getElementById('words')inner
+// 		document.getElementById('')
+// 		document.getElementById('')
+// 	}
+
+
+// }
+// function CheckPassword(inputtxt) 
+// { 
+// var passw=  /^[A-Za-z]\w{7,15}$/;
+// if(inputtxt.value.match(passw)) 
+// { 
+// alert('Correct, try another...')
+// return true;
+// }
+// else
+// { 
+// alert('Wrong...!')
+// return false;
+// }
+// }
+</script>
+	<title></title>
+	<link href="login.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+   <div class="container">
+        <div class="row">
+         <div class="col-md-5 mx-auto">
+         <div id="first">
+            <div class="myform form ">
+                <div class="logo mb-3">
+                   <div class="col-md-12 text-center">
+                     <h1>Login</h1>
+                   </div>
+               </div>
+                   <form action="" method="post" name="login">
+                           <div class="form-group">
+                              <label for="words">Name:</label>
+                              <textarea class="form-control" rows="1" id="name"></textarea>
+                           </div>
+                           <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="col-md-12 text-center ">
+                              <button type="submit" onclick="return validateform()"class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                              <!-- <input type="button" onclick="return validateform()" value="submit"> -->
+                           </div>
+                           <div class="col-md-12 ">
+                              <div class="login-or">
+                                 <hr class="hr-or">
+                                 <span class="span-or">or</span>
+                              </div>
+                           </div>
+      
+                        </form>
+                 
+            </div>
+         </div>
+      </div>
+      </div>
+
+</body>
+</html>
