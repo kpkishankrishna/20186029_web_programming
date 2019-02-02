@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Mine sweep</h1>
+<form name = "input" id = "input">
+  First name:<br>
+  <input type="text" id="firstname"><br>
+  Last name:<br>
+  <input type="text" id="lastname">
+</form>
+<button onclick="validateForm()">Start</button>
+<div class="grid-container main" >
+
+<!--   <div id = "1" class="grid-item"><button class="btn btn-primary" onclick="check(this)">1</button></div>
+  <div id = "2" class="grid-item"><button class="btn btn-primary" onclick="check(this)">2</button></div>
+  <div id = "3" class="grid-item"><button class="btn btn-primary" onclick="check(this)">3</button></div>
+  <div id = "4" class="grid-item"><button class="btn btn-primary" onclick="check(this)">4</button></div>
+  <div id = "5" class="grid-item"><button class="btn btn-primary" onclick="check(this)">5</button></div>
+  <div id = "6" class="grid-item"><button class="btn btn-primary" onclick="check(this)">6</button></div>
+  <div id = "7" class="grid-item"><button class="btn btn-primary" onclick="check(this)">7</button></div>
+  <div id = "8" class="grid-item"><button class="btn btn-primary" onclick="check(this)">8</button></div>
+  <div id = "9" class="grid-item"><button class="btn btn-primary" onclick="check(this)">9</button></div> -->
+    
+</div>
+<h1 id = "update"></h1>
+<table style="width:100%" id = "tb">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Score</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td id = "1"></td>
+    <td id = "2"></td>
+    <td id = "3"></td>
+    <td id = "4"></td>
+  </tr>
+ 
+</table>
+<div id = "result"></div>
+<div class = "details"></div>
+<button onclick="reset()">Reset</button>
+<script src="ms.js"></script>
+</body>
+</html>
